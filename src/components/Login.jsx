@@ -4,9 +4,17 @@ import Header from './Header'
 const Login = () => {
   const[isSignInForm,setisSignInForm]= useState(true)
 
+  const handleButtonClick=()=>{
+    //validate form data will be using utility which we have created under utils
+    //checkValidData()
+
+  }
+
   const ToggleSignInForm =()=>{
       setisSignInForm(!isSignInForm);
   };
+
+  
   return (
     <div>
       <Header/>
@@ -35,7 +43,7 @@ const Login = () => {
           className="w-full p-3 mb-6 rounded bg-gray-800 placeholder-gray-400 focus:outline-none"
         />
         
-        <button className="w-full bg-red-600 hover:bg-red-700 p-3 rounded font-semibold cursor-pointer">
+        <button className="w-full bg-red-600 hover:bg-red-700 p-3 rounded font-semibold cursor-pointer" onClick = {handleButtonClick} >
           {isSignInForm? "Sign In" : "Sign Up"}
         </button>
         <p className="py-4 cursor-pointer" onClick={ToggleSignInForm}>{isSignInForm?"New to Netflix? Sign Up Now" : "Already Registered? Please SignIn"}</p>

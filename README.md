@@ -5,6 +5,8 @@
     -Header
     -Login Form
     -signup form
+    -form validation(using rejex)
+    -useRef Hook
 
 # Features
 
