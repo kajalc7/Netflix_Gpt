@@ -1,9 +1,10 @@
 import React from "react"
+import Body from "./components/Body";
 function App() {
 
-  return <div className="text-3xl font-bold text-green-400">
-          Hello everyone lets build netflix along with chatgpt1
-         </div>;    
+  return(
+     <Body/>
+  )
 }
 
-export default App
+export default App;
