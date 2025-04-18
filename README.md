@@ -1,6 +1,9 @@
  ## Netflix GPT
     -installed using vite
     -configured tailwind css
+    -Routing
+    -Header
+    -Login Form
 
 # Features
 
