@@ -2,23 +2,21 @@
     -installed using vite
     -configured tailwind css
 
+# Features
+
+    -Login/signup page
+        -signin/signup free
+        -redirect to browse page
 
 
-##Features
+    -Browse page for logged in user
+    -Header
+    -Main movie
+        -Trailer in background
+        -Title and description
+        -Movie suggestion
+            -MovieList(so many based on categories)
 
--Login/signup page
-    -signin/signup free
-    -redirect to browse page
-
-
--Browse page for logged in user
- -Header
- -Main movie
-    -Trailer in background
-    -Title and description
-    -Movie suggestion
-        -MovieList(so many based on categories)
-
--Netflix GPt
-    -Search Bar
-    -Movie suggestion
+    -Netflix GPt
+        -Search Bar
+        -Movie suggestion
