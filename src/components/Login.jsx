@@ -4,7 +4,7 @@ import { checkValidData } from '../utils/validate'
 import {createUserWithEmailAndPassword } from "firebase/auth";
 import {signInWithEmailAndPassword } from "firebase/auth";
 import { updateProfile } from "firebase/auth";
-import { addUser, removeUser } from '../utils/userSlice'
+import { addUser} from '../utils/userSlice'
 import { auth } from '../utils/FireBase';
 import { useNavigate} from 'react-router-dom';
 import { useDispatch } from 'react-redux';

@@ -12,6 +12,8 @@
     -create signup/signin user api
     -we want the user object we logged in to store in redux store which we will be further using it fo browsing our app
     -created redux store with userslice
+    -implemented signput
+    -update profile
 
 
 # Features
