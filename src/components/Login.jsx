@@ -6,6 +6,7 @@ const Login = () => {
   const[isSignInForm,setisSignInForm]= useState(true)
   const[errormessage,seterrormessage]=useState(null);
 
+  const username= useRef(null);
   const email= useRef(null);
   const password = useRef(null);
 
@@ -15,8 +16,9 @@ const Login = () => {
     //we are using ref hook
     console.log(email.current.value);
     console.log(password.current.value);
+    console.log(username.current.value);
 
-    const message = checkValidData(email.current.value,password.current.value);
+    const message = checkValidData(username.current.value,email.current.value,password.current.value);
    // console.log(message);
     seterrormessage(message);
 
@@ -41,8 +43,9 @@ const Login = () => {
         {isSignInForm? "Sign In" : "Sign Up"}
         </h1>
       {!isSignInForm && <input //condition && doSomething()
+        ref={username}
         type="text"
-        placeholder="Full Name"
+        placeholder=" UserName"
         className="w-full p-3 mb-6 rounded bg-gray-800 placeholder-gray-400 focus:outline-none"
       />}
       <input
