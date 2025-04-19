@@ -9,6 +9,7 @@
     -useRef Hook
     -authentication using google firebase(backend)
     -deploying our app to  production
+    -create signup user account
 
 # Features
 
