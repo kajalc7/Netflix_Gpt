@@ -3,6 +3,8 @@ import Header from './Header'
 import { checkValidData } from '../utils/validate'
 import {createUserWithEmailAndPassword } from "firebase/auth";
 import {signInWithEmailAndPassword } from "firebase/auth";
+import { updateProfile } from "firebase/auth";
+
 
 import { auth } from '../utils/FireBase';
 import { useNavigate} from 'react-router-dom';
@@ -41,6 +43,14 @@ const Login = () => {
       .then((userCredential) => {
         // Signed up 
         const user = userCredential.user;
+        updateProfile(user, {
+          displayName: usernameValue, photoURL: "https://avatars.githubusercontent.com/u/79201873?v=4"
+        })
+          .then(() => {
+            navigate("/browse");
+        }).catch((error) => {
+          seterrormessage(error.message)
+        });
         console.log(user)
         navigate("/browse");
 
