@@ -9,8 +9,10 @@
     -useRef Hook
     -authentication using google firebase(backend)
     -deploying our app to  production
-    -create signup/signin user account
+    -create signup/signin user api
     -we want the user object we logged in to store in redux store which we will be further using it fo browsing our app
+    -created redux store with userslice
+
 
 # Features
 
