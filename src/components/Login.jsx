@@ -4,14 +4,15 @@ import { checkValidData } from '../utils/validate'
 import {createUserWithEmailAndPassword } from "firebase/auth";
 import {signInWithEmailAndPassword } from "firebase/auth";
 import { updateProfile } from "firebase/auth";
-
-
+import { addUser, removeUser } from '../utils/userSlice'
 import { auth } from '../utils/FireBase';
 import { useNavigate} from 'react-router-dom';
+import { useDispatch } from 'react-redux';
 
 
 const Login = () => {
-  const navigate =useNavigate()
+  const navigate =useNavigate();
+  const dispatch =useDispatch();
 
   const[isSignInForm,setisSignInForm]= useState(true)
   const[errormessage,seterrormessage]=useState(null);
@@ -47,6 +48,12 @@ const Login = () => {
           displayName: usernameValue, photoURL: "https://avatars.githubusercontent.com/u/79201873?v=4"
         })
           .then(() => {
+            const {uid, email, displayName,photoURL} = auth.currentUser;
+                         dispatch(addUser({
+                          uid:uid, 
+                          email: email, 
+                          displayName: displayName, 
+                          photoURL: photoURL}));
             navigate("/browse");
         }).catch((error) => {
           seterrormessage(error.message)
