@@ -7,6 +7,8 @@
     -signup form
     -form validation(using rejex)
     -useRef Hook
+    -authentication using google firebase(backend)
+    -deploying our app to  production
 
 # Features
 

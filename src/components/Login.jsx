@@ -16,9 +16,13 @@ const Login = () => {
     //we are using ref hook
     console.log(email.current.value);
     console.log(password.current.value);
-    console.log(username.current.value);
+    //console.log(username.current.value);
+    const emailValue = email.current?.value;
+    const passwordValue = password.current?.value;
+    const usernameValue = isSignInForm ? null : username.current?.value;
 
-    const message = checkValidData(username.current.value,email.current.value,password.current.value);
+    const message = checkValidData(usernameValue,emailValue,passwordValue);
+
    // console.log(message);
     seterrormessage(message);
 
