@@ -21,3 +21,5 @@ export const PlayButton =
 export const MoreInfoButton =
     "https://www.pngplay.com/wp-content/uploads/7/More-Info-Button-PNG-HD-Quality.png"
 
+export const Img_cdn_url="https://image.tmdb.org/t/p/w780"
+

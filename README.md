@@ -28,7 +28,6 @@
     -created custom hook for trailer video
     -applied css for trailer video
 
-
 # Features
 
     -Login/signup page
