@@ -27,6 +27,8 @@
     -added trailer using redux store
     -created custom hook for trailer video
     -applied css for trailer video
+    -added movie card and displayed movielist for diff genre
+    -added popular movie list also using custom hook
 
 # Features
 
