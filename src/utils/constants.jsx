@@ -14,3 +14,10 @@ export const API_Options = {
       Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3ZjY5ZTRhNjU3YjVjZGY4Y2VhNjdmMTk5ZWRhNjNlOSIsIm5iZiI6MTc0NTY2MTUyMS43MTQsInN1YiI6IjY4MGNhZTUxM2M3MThlOGM1NTM3NzZjNSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.Coy9Dszr7Kzql4mgec-hcnUcgj9uPGBG5eJz_PMe9ss'
     }
   };
+
+export const PlayButton =
+    "https://i.pinimg.com/736x/96/28/28/9628288cf4023b3b5dc553421f8507cf.jpg"
+
+export const MoreInfoButton =
+    "https://www.pngplay.com/wp-content/uploads/7/More-Info-Button-PNG-HD-Quality.png"
+
