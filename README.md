@@ -21,6 +21,7 @@
     -Registred TMDB and created app
     -get data from TMDB now playing movie list API
     -added movieslice reducer and  in redux store stored movie data
+    -creating custom hook
 
 
 # Features
