@@ -26,6 +26,7 @@
     -added secondary container for n number of files which will display as cards with its details
     -added trailer using redux store
     -created custom hook for trailer video
+    -applied css for trailer video
 
 
 # Features
