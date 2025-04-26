@@ -5,7 +5,7 @@ import { useDispatch } from 'react-redux'
 import { addNowPlayingMovies } from '../utils/movieSlice'
 
 const Browse = () => {
-
+//fetch data from tmdb api and update store
   const dispatch = useDispatch();
 
   const getNowPlayingMovies = async () =>{
@@ -20,7 +20,8 @@ const Browse = () => {
 
    useEffect(()=>{
      getNowPlayingMovies();
-   },[])
+   },[]);
+
   return (
     <div>
       <Header/>
