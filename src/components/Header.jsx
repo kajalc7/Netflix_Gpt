@@ -8,6 +8,7 @@ import { useDispatch } from 'react-redux'
 import { addUser, removeUser } from '../utils/userSlice'
 import { useEffect } from 'react'
 import { LOGO } from '../utils/constants';
+import { toggleGptSearchView } from '../utils/GptSlice';
 
 
 
@@ -52,6 +53,13 @@ useEffect(()=>{
 },[]);
 
 
+const handleGPTSearchClick = () =>{
+  //toggle gpt search
+  dispatch(toggleGptSearchView());
+
+}
+
+
   return (
     <div className="absolute  w-screen px-8 py-2 bg-gradient-to-b from-black z-10 flex justify-between">
       <img
@@ -60,6 +68,7 @@ useEffect(()=>{
       alt="logo"/>
 
       {user && (<div className="flex p-2">
+            <button className="py-2 px-4 mx-4 my-2 bg-purple-800 text-white rounded-lg" onClick={handleGPTSearchClick}>GPT Search</button>
             <img
             className="w-12 h-12"
             src=

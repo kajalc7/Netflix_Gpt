@@ -29,6 +29,7 @@
     -applied css for trailer video
     -added movie card and displayed movielist for diff genre
     -added popular movie list also using custom hook
+    -Gpt Search feature
 
 # Features
 
