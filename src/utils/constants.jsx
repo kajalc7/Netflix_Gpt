@@ -23,3 +23,9 @@ export const MoreInfoButton =
 
 export const Img_cdn_url="https://image.tmdb.org/t/p/w780"
 
+export const Supported_Languages = [
+    {identifier:"en", name:"English"},
+    {identifier:"hindi", name:"Hindi"},
+    {identifier:"spanish", name:"Spanish"}
+]
+

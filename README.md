@@ -32,6 +32,7 @@
     -Gpt Search feature
     -handled toggle functionality using redux  for got search view
     -improved css in searchgpt component
+    -added language preference using modular coding
 
 # Features
 
