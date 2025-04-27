@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaSearch } from 'react-icons/fa'; // using react-icons for search icon
+import lang from '../utils/languageconstant';
 
 const GptSearchBar = () => {
   return (
@@ -10,11 +11,11 @@ const GptSearchBar = () => {
           <input
             type="text"
             className="flex-grow outline-none text-black"
-            placeholder="What would you like to watch today?"
+            placeholder={lang.hindi.gptSearchPlaceholder}
           />
         </div>
         <button className="py-2 px-6 bg-red-600 text-white font-semibold rounded-lg">
-          Search
+          {lang.hindi.search}
         </button>
       </form>
     </div>
