@@ -31,6 +31,7 @@
     -added popular movie list also using custom hook
     -Gpt Search feature
     -handled toggle functionality using redux  for got search view
+    -improved css in searchgpt component
 
 # Features
 
