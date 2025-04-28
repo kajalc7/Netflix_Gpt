@@ -78,7 +78,7 @@ const handleLanguageChange = (e) =>{
               className="py-2 px-4 mx-4 my-2 bg-purple-800 text-white rounded-lg"
               onClick={handleGPTSearchClick}
             >
-              GPT Search
+              {showgptSearch? "Home Page" : "GPT Search"}
             </button>
             <img className="w-12 h-12 rounded-full" src={user.photoURL} alt="user icon" />
             <button onClick={handleSignOut} className="font-bold text-white cursor-pointer">

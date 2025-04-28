@@ -33,6 +33,9 @@
     -handled toggle functionality using redux  for got search view
     -improved css in searchgpt component
     -added language preference using modular coding
+    -language prefercne using redux store
+    -visibility of language selection only if user is on gptsearch page
+    -when user is on got search page user change gpt search button to home page
 
 # Features
 
