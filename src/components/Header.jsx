@@ -9,6 +9,7 @@ import { addUser, removeUser } from '../utils/userSlice'
 import { useEffect } from 'react'
 import { LOGO, Supported_Languages } from '../utils/constants';
 import { toggleGptSearchView } from '../utils/GptSlice';
+import { changeLanguage } from '../utils/configSlice';
 
 
 
@@ -60,9 +61,8 @@ const handleGPTSearchClick = () =>{
 }
 
 const handleLanguageChange = (e) =>{
-  console.log(e.target.value);
+  dispatch(changeLanguage(e.target.value))
 }
-
 
   return (
           <div className="absolute w-screen px-8 py-2 bg-gradient-to-b from-black z-10 flex justify-between">
