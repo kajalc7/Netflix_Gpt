@@ -59,6 +59,10 @@ const handleGPTSearchClick = () =>{
 
 }
 
+const handleLanguageChange = (e) =>{
+  console.log(e.target.value);
+}
+
 
   return (
           <div className="absolute w-screen px-8 py-2 bg-gradient-to-b from-black z-10 flex justify-between">
@@ -66,8 +70,8 @@ const handleGPTSearchClick = () =>{
 
         {user && (
           <div className="flex p-2 items-center">
-            <select className="bg-teal-500 text-white px-6 py-2 rounded-lg mx-4 w-36 border-2 border-transparent focus:border-white focus:outline-none">
-              {Supported_Languages.map(lang=> <option  ley={lang.identifier} value={lang.identifier}>{lang.name}</option>)}
+            <select className="bg-teal-500 text-white px-6 py-2 rounded-lg mx-4 w-36 border-2 border-transparent focus:border-white focus:outline-none" onChange={handleLanguageChange}>
+              {Supported_Languages.map(lang=> <option  key={lang.identifier} value={lang.identifier}>{lang.name}</option>)}
             </select>
             <button
               className="py-2 px-4 mx-4 my-2 bg-purple-800 text-white rounded-lg"
