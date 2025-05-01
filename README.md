@@ -35,7 +35,14 @@
     -added language preference using modular coding
     -language prefercne using redux store
     -visibility of language selection only if user is on gptsearch page
-    -when user is on got search page user change gpt search button to home page
+    -when user is on gpt search page user change gpt search button to home page
+
+# ChatGpt
+    -generated api key from platform.openai.com
+    -install npm open ai
+    -added chatgpt code to fetch movies on based on prompt passed
+    -make the result given bt openai in form of array and for each moview will make Tmdb api call to get the movie 
+
 
 # Features
 
