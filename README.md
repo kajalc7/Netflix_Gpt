@@ -36,6 +36,8 @@
     -language prefercne using redux store
     -visibility of language selection only if user is on gptsearch page
     -when user is on gpt search page user change gpt search button to home page
+    -added memoization
+    -dispalyed  movie from chatgpt serach list
 
 # ChatGpt
     -generated api key from platform.openai.com
