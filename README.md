@@ -43,6 +43,7 @@
     -added chatgpt code to fetch movies on based on prompt passed
     -make the result given bt openai in form of array and for each moview will make Tmdb api call to get the movie 
     -get movielist from tmdb based on usersearch
+    -pushed all the movienames and movie result in redux store
 
 
 # Features

@@ -1,13 +1,16 @@
 import React, { useRef } from 'react';
 import { FaSearch } from 'react-icons/fa'; // using react-icons for search icon
 import lang from '../utils/languageconstant';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 // import openai from '../utils/Openai';
 import { Openai_Key } from '../utils/constants';
 import { API_Options } from '../utils/constants';
+import { addGptMoviesResults } from '../utils/GptSlice';
 
 
 const GptSearchBar = () => {
+
+    const dispatch = useDispatch();
     const langKey = useSelector((store) => store.config.lang)
     const searchText= useRef(null);
 
@@ -83,6 +86,8 @@ const GptSearchBar = () => {
         const tmdbResults = await Promise.all(promiseArray);
     
         console.log(tmdbResults); // Array of movie search results
+
+        dispatch(addGptMoviesResults({movieNames:gptMovies, movieResults:tmdbResults}))
       } catch (error) {
         console.error("Error fetching or processing GPT results:", error);
       }
