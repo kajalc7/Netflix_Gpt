@@ -77,7 +77,7 @@ const GptSearchBar = () => {
         );
     
         const data = await response.json();
-        const gptMovies = data.candidates[0].content.parts[0].text.split(",").map(movie => movie.trim());
+        const gptMovies = data.candidates[0].content.parts[0].text.split(",").map(movie => movie.trim());;
         console.log(gptMovies);
     
         // Search each movie on TMDB
