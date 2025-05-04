@@ -12,39 +12,6 @@ const GptSearchBar = () => {
     const langKey = useSelector((store) => store.config.lang);
     const searchText = useRef(null);
 
-    // const handleGptSearchClick = async () => {
-    //     console.log(searchText.current.value);
-
-    //     //make an api call to gptapi and get movie result;
-
-    //     const gptQuery ="Act as a Movie Recommendation System and suggest some movie for the query :" + searchText.current.value + ". Also give me 5 movies, comma seperated like the example result given ahead. Example result: Gadar,sholay,Mohabbatein,kuch kuch hota hai,Golamaal";
-
-    //     const gptResults = await openai.chat.completions.create({
-    //       model: 'gpt-4o',
-    //       messages: [
-    //         // {
-    //         //   role: 'system',
-    //         //   content: 'You are a coding assistant that talks like a pirate.',
-    //         // },
-    //         {
-    //           role: 'user',
-    //           content: gptQuery
-    //         },
-    //       ],
-    //     });
-    //     if (!gptResults.choices || gptResults.choices.length === 0) {
-    //       console.error("No choices returned from GPT.");
-    //       return;
-    //     }
-        
-    //     console.log(gptResults.choices[0]?.message.content);
-    //     //5 movies will be there
-    //     const gptMovies = gptResults.choices[0]?.message.content.split(",");//it will give me array of movies
-
-    //     //for each i will search tmdb Api
-
-    // };
-
     // search movie in TMDB
     const searchmovieTMDB = async (movie) => {
         const data = await fetch(
